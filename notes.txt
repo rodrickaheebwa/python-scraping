@@ -1,0 +1,32 @@
+Always use the raise_for_status() when using the requests module.
+
+Web Scraping Best Practices:
+- Never scrape more frequently than you need to.
+- Consider caching the content you scrape so that it’s only downloaded once.
+- Build pauses into your code using functions like time.sleep() to keep from overwhelming servers with too many requests too quickly.
+
+Steps involved in web scraping:
+- Find the URL of the webpage that you want to scrape
+- Select the particular elements by inspecting
+- Write the code to get the content of the selected elements
+- Store the data in the required format
+
+Alternative to Web Scraping: APIs
+With APIs, you can avoid parsing HTML. Instead, you can access the data directly using formats like JSON and XML.
+When you use an API, the process is generally more stable than gathering the data through web scraping. That’s because developers create APIs to be consumed by programs rather than by human eyes.
+
+You can scrape any site on the Internet that you can look at, but the difficulty of doing so depends on the site.
+
+Things to understand:
+- How to inspect and view html tags of the website, using developer tools.
+- Understanding information in the urls; relative routes, query parameters.
+
+The requests library comes with the built-in capacity to handle authentication, so that you can log in to websites when making the HTTP request from your Python script and then scrape information that’s hidden behind a login.
+
+Many modern web applications are designed to provide their functionality in collaboration with the clients’ browsers. Instead of sending HTML pages, these apps send JavaScript code that instructs your browser to create the desired HTML. Web apps deliver dynamic content in this way to offload work from the server to the clients’ machines as well as to avoid page reloads and improve the overall user experience.
+
+The only way to go from the JavaScript code you received to the content that you’re interested in is to execute the code, just like your browser does. The requests library can’t do that for you, but there are other solutions that can.
+e.g. requests-html
+A popular choice for scraping dynamic content is Selenium. You can think of Selenium as a slimmed-down browser that executes the JavaScript code for you before passing on the rendered HTML response to your script.
+
+For static content, we can use Beautiful Soup. Beautiful Soup is a Python library for parsing structured data. It allows you to interact with HTML in a similar way to how you interact with a web page using developer tools.
