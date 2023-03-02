@@ -1,3 +1,5 @@
+# this doesn't work
+
 import requests
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -84,3 +86,5 @@ else:
 
 # heavily delayed by slow network at the time.
 # will need to be looked at back at the main library.
+# as well as images in the csv
+# project came to a painful end, couldn't proceed
