@@ -7,7 +7,7 @@ Web Scraping Best Practices:
 
 Steps involved in web scraping:
 - Find the URL of the webpage that you want to scrape
-- Select the particular elements by inspecting
+- Select the particular elements by inspecting, we can use xpaths rather than regular css for its efficiency
 - Write the code to get the content of the selected elements
 - Store the data in the required format
 

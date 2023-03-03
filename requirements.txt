@@ -7,3 +7,4 @@ selenium
 Pillow
 aiohttp
 aiofiles
+scrapy
