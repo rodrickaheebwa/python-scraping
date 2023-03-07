@@ -7,3 +7,5 @@ driver
 test
 
 *.db
+
+.ipynb_checkpoints

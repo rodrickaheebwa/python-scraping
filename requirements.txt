@@ -8,3 +8,4 @@ Pillow
 aiohttp
 aiofiles
 scrapy
+pandas
