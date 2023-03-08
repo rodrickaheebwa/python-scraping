@@ -1,0 +1,4 @@
+Envato and Istockphoto
+- Looking for someone to build and run a very basic scraper for stock image sites like envato elements or istockphoto.
+- What we need exactly is to go to a search results category page like this : https://elements.envato.com/graphic-templates/print-templates+ux-and-ui-kits/saas/sort-by-latest and then for each item present there, to download all the images - some of them will only have one image, others will have more than one.
+- Finally, we need to download the item tags. For each image file, we'll need to create a separate txt file with the same name as the image, and the txt fill contain the tags, comma separate. so if the image file name is image-1.jpeg, we'll need a file image-1.txt that will contain all the tags.

@@ -1,0 +1,16 @@
+Method 1:
+
+Login using the browser, and then in the network tab, collect the GET request sent to the server (which will contain with it authorization to the site).
+Copy the request as curl (bash) and convert it into python code with https://curlconverter.com/
+This is reliable if there's only one page you're trying to scrape, otherwise you'll have to keep collecting the GET requests.
+
+Method 2:
+
+Inspecting the login fields
+Collect the action (if it's there), if it's not there, then probably opt for method 1
+Collecting the relevant fields; email, username, password, authenticity token, timestamp (to form the payload)
+Mimic the request in the code
+
+Method 3:
+
+Use headless browsers with Selenium, Playwright, Puppeteer
