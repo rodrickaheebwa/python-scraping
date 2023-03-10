@@ -1,0 +1,5 @@
+- create crontab in the same folder as the file
+
+- test run the python file in its parent folder to avoid file path issues
+
+*Get more notes after running it on ubuntu
